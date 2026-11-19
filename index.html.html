@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mostafa Yehia — Cybersecurity Student</title>
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--text:#1b2430;--muted:#5b6778;--accent:#0b7a5a;--line:#dfe5ec;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8b97a6;--accent:#3ddc97;--line:#2a313c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8b97a6;--accent:#3ddc97;--line:#2a313c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+header{padding:64px 0 40px}
+.tag{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-size:14px}
+h1{font-size:clamp(34px,7vw,56px);margin:8px 0 12px;line-height:1.1}
+h2{font-size:26px;margin:0 0 6px}
+.lead{color:var(--muted);max-width:640px;font-size:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:10px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);text-decoration:none;font-weight:600;background:var(--card)}
+.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:6px 0 8px;font-size:18px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:15px}
+.badge{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--accent)}
+dl{margin:0 0 12px;font-size:14px}dt{color:var(--muted);float:left;clear:left;width:80px}dd{margin:0 0 2px 80px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:22px}
+.stat{text-align:center}.stat b{display:block;font-size:30px;color:var(--accent)}.stat span{color:var(--muted);font-size:14px}
+ul.tags{list-style:none;padding:0;margin:14px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+ul.tags li{border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:99px;font-size:14px}
+footer{padding:30px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+a.link{color:var(--accent);text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#about">About</a><a href="#forensics">Digital Forensics</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+
+<header>
+<div class="tag">Cybersecurity Student · Digital Forensics · Ethical Hacking · Information Security</div>
+<h1>Mostafa Yehia</h1>
+<p class="lead">I investigate digital evidence, break systems legally to make them stronger, and document every case so others can learn from it.</p>
+<div class="btns">
+<a class="btn primary" href="#forensics">View forensics work</a>
+</div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<p class="sub">From curiosity to casework</p>
+<p>I am a cybersecurity student focused on digital forensics: recovering, analysing and explaining what happened on a compromised system. I enjoy the detective side of security, following artifacts in memory, disk, network traffic and logs until the full story is clear.</p>
+<p>I work through hands-on challenges to practise reading packet captures, disk images, memory dumps and logs, and I use platforms like TryHackMe and CyberTalents to keep building those skills step by step. I am not an expert yet, but I am consistent, and I care about doing the work properly.</p>
+<p>I also practise ethical hacking in legal lab environments, because understanding how attacks work helps me recognise their traces during an investigation. My goal is to grow into a reliable digital forensics and incident response analyst, and to keep learning from every case I work on.</p>
+
+</section>
+
+<section id="forensics">
+<h2>Digital forensics</h2>
+<p class="sub">Evidence log: each case lists the platform, evidence type, tools and my write-up.</p>
+<div class="grid">
+<article class="card"><span class="badge">CASE 01 · EXAMPLE</span><h3>Network forensics case</h3>
+<dl><dt>Platform</dt><dd>Your platform</dd><dt>Evidence</dt><dd>Packet capture (pcap)</dd><dt>Tools</dt><dd>Wireshark</dd></dl>
+<p>Network forensics studies captured traffic to reconstruct who talked to whom, what was sent and how an attack unfolded.</p></article>
+<article class="card"><span class="badge">CASE 02 · EXAMPLE</span><h3>Disk forensics case</h3>
+<dl><dt>Platform</dt><dd>Your platform</dd><dt>Evidence</dt><dd>Disk image</dd><dt>Tools</dt><dd>Autopsy, FTK Imager</dd></dl>
+<p>Disk forensics examines storage images to recover deleted files, user activity and hidden artifacts without altering the original evidence.</p></article>
+<article class="card"><span class="badge">CASE 03 · EXAMPLE</span><h3>Memory forensics case</h3>
+<dl><dt>Platform</dt><dd>Your platform</dd><dt>Evidence</dt><dd>Memory dump</dd><dt>Tools</dt><dd>Volatility</dd></dl>
+<p>Memory forensics analyses a RAM dump to find running processes, network connections and malware that never touched the disk.</p></article>
+<article class="card"><span class="badge">CASE 04 · EXAMPLE</span><h3>Log analysis case</h3>
+<dl><dt>Platform</dt><dd>Your platform</dd><dt>Evidence</dt><dd>System and web logs</dd><dt>Tools</dt><dd>Your tools</dd></dl>
+<p>Log analysis correlates system, application and web logs into a timeline that shows when and how an incident happened.</p></article>
+<article class="card"><span class="badge">CASE 05 · EXAMPLE</span><h3>Mobile forensics case</h3>
+<dl><dt>Platform</dt><dd>Your platform</dd><dt>Evidence</dt><dd>Mobile backup or app data</dd><dt>Tools</dt><dd>Your tools</dd></dl>
+<p>Mobile forensics extracts messages, app data, locations and media from phones and backups to reconstruct a user’s activity.</p></article>
+<article class="card"><span class="badge">CASE 06 · SOLVED</span><h3>Cypher Anxiety</h3>
+<dl><dt>Platform</dt><dd>CyberTalents</dd><dt>Category</dt><dd>Network forensics</dd><dt>Evidence</dt><dd>Packet capture (pcap)</dd><dt>Tools</dt><dd>Wireshark</dd></dl>
+<p>Network forensics challenge solved by analysing a packet capture in Wireshark.</p><a class="link" href="https://medium.com/@osamamamoussa/cybertalents-cypheranxiety-write-up-c26c9fb0254d" target="_blank" rel="noopener">Read the write-up by Osama Moussa →</a></article>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills and tools</h2>
+<p class="sub">What I work with</p>
+<ul class="tags"><li>Digital forensics</li><li>Incident response</li><li>Network analysis</li><li>Wireshark</li><li>Autopsy</li><li>Volatility</li><li>Ethical hacking</li><li>Linux</li><li>Report writing</li></ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p class="sub">Find me online</p>
+<div class="btns" style="margin-top:0">
+<a class="btn primary" href="https://www.linkedin.com/in/mostafa-yehia-15040a3b4" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://tryhackme.com/p/mostafayehiagoud" target="_blank" rel="noopener">TryHackMe</a>
+</div>
+</section>
+
+<footer>© 2026 Mostafa Yehia</footer>
+</div>
+</body>
+</html>
